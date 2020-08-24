@@ -1,14 +1,11 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles'
 
-import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
-import CardHeader from '@material-ui/core/CardHeader';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
-import Typography from '@material-ui/core/Typography';
-import Avatar from '@material-ui/core/Avatar';
+import Grid from '@material-ui/core/Grid'
+import Card from '@material-ui/core/Card'
+import CardHeader from '@material-ui/core/CardHeader'
+import CardMedia from '@material-ui/core/CardMedia'
+import Avatar from '@material-ui/core/Avatar'
 import MovieFilter from '@material-ui/icons/MovieFilter'
 import Theaters from '@material-ui/icons/Theaters'
 import movies from '../assets/sample.json'
@@ -17,7 +14,7 @@ import {
     Switch,
     Route,
     Link
-  } from "react-router-dom";
+  } from "react-router-dom"
   
 const useStyles = makeStyles((theme) => {
     return {

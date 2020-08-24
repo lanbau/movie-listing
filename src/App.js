@@ -1,13 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import React from 'react'
+import './App.css'
+import { makeStyles } from '@material-ui/core/styles'
+import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar'
+import Typography from '@material-ui/core/Typography'
+import Button from '@material-ui/core/Button'
+import IconButton from '@material-ui/core/IconButton'
+import MenuIcon from '@material-ui/icons/Menu'
 import SelectionType from './components/SelectionType'
 import Selection from './components/Selection'
 import {
@@ -15,7 +14,7 @@ import {
   Switch,
   Route,
   Link
-} from "react-router-dom";
+} from "react-router-dom"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,19 +30,16 @@ const useStyles = makeStyles((theme) => ({
     color: '#FFF',
     textDecoration: 'none'
   }
-}));
+}))
 
 
 const App = () => {
-  const classes = useStyles();
+  const classes = useStyles()
   return (    
     <Router>
       <div className={classes.root}>
         <AppBar position="static">
           <Toolbar>
-            {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-              <MenuIcon />
-            </IconButton> */}
             <Typography variant="h6" className={classes.title}>
               DEMO Streaming
             </Typography>
@@ -58,9 +54,6 @@ const App = () => {
             </Link>
           </Toolbar>
         </AppBar>
-        {/* <Selection /> */}
-        {/* <Movies /> */}
-        
       </div>
       <Switch>
           <Route path="/series">
@@ -74,8 +67,8 @@ const App = () => {
           </Route>
         </Switch>
     </Router>
-  );
+  )
 }
 
 
-export default App;
+export default App
