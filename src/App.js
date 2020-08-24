@@ -10,7 +10,6 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import SelectionType from './components/SelectionType'
 import Selection from './components/Selection'
-import Series from './components/Series'
 import {
   BrowserRouter as Router,
   Switch,
@@ -61,11 +60,7 @@ const App = () => {
         </AppBar>
         {/* <Selection /> */}
         {/* <Movies /> */}
-        <Toolbar style={{ backgroundColor: '#5b5b5b', color: 'white'}}>
-          <Typography variant="body1" className={classes.title}>
-            Popular Titles 
-          </Typography>
-        </Toolbar>
+        
       </div>
       <Switch>
           <Route path="/series">
