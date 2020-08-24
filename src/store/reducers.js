@@ -5,7 +5,6 @@ const initialState = {
 }
 
 const movieSeries = (state = initialState, action) => {
-    console.log(action)
     switch (action.type) {
         case SET_CURRENT:
             return {
