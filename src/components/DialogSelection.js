@@ -38,38 +38,26 @@ const DialogSelection = ({ openDialog, setOpenDialog }) => {
                 {title} - {releaseYear}
             </DialogTitle>
             <DialogContent dividers>
-            <Typography gutterBottom>
-               {description}
-            </Typography>
-            <Typography gutterBottom>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis
-                lacus vel augue laoreet rutrum faucibus dolor auctor.
-            </Typography>
-            <Typography gutterBottom>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
-                scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
-                auctor fringilla.
-            </Typography>
-            <Grid container spacing={2} style={{ marginTop: 16 }}>
-                <Grid item >
-                    <img style={{ width: '100%' }} src={(images['Poster Art'] || {}).url}/>
+                <Typography gutterBottom>
+                {description}
+                </Typography>
+                <Grid container spacing={2} style={{ marginTop: 16 }}>
+                    <Grid item >
+                        <img style={{ width: '100%' }} src={(images['Poster Art'] || {}).url}/>
+                    </Grid>
                 </Grid>
-               
-
-            </Grid>
-            <Grid item >
+                <Grid item >
                     <h1>Fun Facts</h1>
                     <div>
                         {funFact}
                         {error}
                     </div>
                 </Grid>
-                
             </DialogContent>
             <DialogActions>
-            <Button autoFocus onClick={handleCloseDialog} color="primary">
-                Close
-            </Button>
+                <Button autoFocus onClick={handleCloseDialog} color="primary">
+                    Close
+                </Button>
             </DialogActions>
         </Dialog>
     )
